@@ -4,5 +4,16 @@
 Para correr el juego debes seguir las siguientes instrucciones en la terminal
 ```sh 
 cd game 
-python game.py
+python main.py
+```
+
+
+# App Project
+
+```sh 
+git clone
+cd app 
+suorce env/bin/activate
+pip install -r requirements.txt
+python main.py
 ```
