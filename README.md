@@ -10,9 +10,18 @@ python main.py
 
 # App Project
 
-```sh 
+```sh clear
 git clone
 cd app 
+python -m venv env
+suorce env/bin/activate
+pip install -r requirements.txt
+python main.py
+```
+
+# Request Project
+```sh clear
+cd web-server 
 python -m venv env
 suorce env/bin/activate
 pip install -r requirements.txt
