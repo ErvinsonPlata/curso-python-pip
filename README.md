@@ -19,7 +19,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-# Fast Api Project
+# FastApi Project
 ```sh clear
 cd web-server 
 python -m venv env
