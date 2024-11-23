@@ -19,11 +19,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
-# Request Project
+# Fast Api Project
 ```sh clear
 cd web-server 
 python -m venv env
 suorce env/bin/activate
 pip install -r requirements.txt
-python main.py
+uvicorn main:app --reload
 ```
