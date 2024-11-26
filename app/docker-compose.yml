@@ -1,0 +1,21 @@
+#Archivo para saber como se va a iniciar y desde donde, ejecutarlos como scrips 
+
+#se crea una etiqueda de servicio
+
+services:
+  app-csv:
+    #Name de la etiqueta
+    build:
+      #Construir el servico
+      context: . #ubicacion del contexto donde se quiere construir el contenerdor, el punto indica que es desde donde esta ubicado 
+      dockerfile: Dockerfile #buscadas el archivo de nombre Dockerfile
+    volumes:
+      #enlazar el contenedor con la carpeta donde esta desarrollando el proyecto
+      - .:/app #enlazar todos los arhivo ubicacdo en la carpeta se enlace con nuestro WORKDIR
+
+#CREAR EL CONTENEDOR - terminal digitar el comando "docker-compose build"
+#LANZAR EL CONTENEDOR - terminal digitar el comando "docker-compose up -d" 
+#VERIFICAR EL ESTADO DEL CONTENEDOR - terminal digitar el comando "docker-compose ps"
+#INGRESAR AL AMBIENTE DEL CONTENEDOR - terminal digitar el comando "docker-compose exec app-csv(Nombre-del-servicio) build"
+#SALIR DEL CONTENEDOR - terminal digitar el comando "exit"
+#BAJAR EL CONTENEDOR QUE ESTE ACTIVO - terminal digitar el comando"docker-compose down"
